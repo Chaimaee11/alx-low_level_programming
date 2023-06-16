@@ -7,23 +7,13 @@
  */
 int main(void)
 {
-    char lowercase = 'a';
-    char uppercase = 'A';
+char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int i;
 
-    // Print lowercase letters
-    while (lowercase <= 'z') {
-        putchar(lowercase);
-        lowercase++;
-    }
-
-    // Print uppercase letters
-    while (uppercase <= 'Z') {
-        putchar(uppercase);
-        uppercase++;
-    }
-
-    // Print a newline
-    putchar('\n');
-
-    return 0;
+	for (i = 0; i < 52; i++)
+	{
+		putchar(alp[i]);
+	}
+	putchar('\n');
+	return (0);
 }
